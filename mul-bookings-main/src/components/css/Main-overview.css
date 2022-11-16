@@ -1,0 +1,25 @@
+.App-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overview-text {
+    /* position: absolute; */
+    width: 665px;
+    height: 687px;
+    border-radius: 29px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.profil {
+    display: flex;
+}
+
+.my-bookings {
+    display: flex;
+}
+
+.profil-styling {
+    width: 38px;
+}
