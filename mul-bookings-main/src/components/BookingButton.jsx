@@ -15,10 +15,6 @@ function BookingButton() {
 
   return (
     <div className="App-div">
-      <h1>Min oversigt</h1>
-      <h3>Zainab Waleed Abbas</h3>
-      <h3>Mine bookinger</h3>
-      <p>Du har ingen eksisterende bookinger i øjeblikket.</p>
       
       <Modal
         isOpen={modalIsOpen}

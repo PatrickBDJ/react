@@ -1,6 +1,7 @@
 import BookingForm from "./BookingForm.jsx";
 import Modal from "react-modal";
 import { useState } from "react";
+import cphlogo from "../assets/cphlogo.png"
 
 function TheHeader() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -15,16 +16,19 @@ function TheHeader() {
 
   return (
     <header className="App-header">
-      <button>Min oversigt</button>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        contentLabel="Create booking form"
-      >
-        <BookingForm />
-      </Modal>
-      <button onClick={openModal}>Lokalebooking</button>
-      <button>Log ud</button>
+      <img src={cphlogo} alt="Logo" id="logo-styling" />
+      <div className="navbar-buttons">
+        <button>Min oversigt</button>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Create booking form"
+        >
+          <BookingForm />
+        </Modal>
+        <button onClick={openModal}>Lokalebooking</button>
+        <button>Log ud</button>
+      </div>
     </header>
   );
 }

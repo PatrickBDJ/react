@@ -14,13 +14,31 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   display: flex;
 /*   flex-direction: column; */
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 5px 20px 0 20px;
+}
+
+.navbar-buttons button{
+  background: none;
+  border: none;
+  color: #00163B;
+  font-weight: 600;
+  font-size: 22px;
+}
+.navbar-buttons button:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#logo-styling{
+  background-color: white;
+  
 }
 
 .App-link {
