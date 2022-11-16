@@ -1,7 +1,8 @@
 import "./App.css";
 import './index.css';
-import './components/Header.css';
-import './components/Buttons.css';
+import './components/css/Header.css';
+import './components/css/Buttons.css';
+import './components/css/Maininfo.css';
 import MainContent from "./components/MainContent";
 import TheHeader from "./components/TheHeader";
 import MainInfo from "./components/MainInfo";
