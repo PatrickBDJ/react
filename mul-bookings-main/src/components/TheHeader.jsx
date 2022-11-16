@@ -22,8 +22,7 @@ function TheHeader() {
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
-          contentLabel="Create booking form"
-        >
+          contentLabel="Create booking form">
           <BookingForm />
         </Modal>
         <button onClick={openModal}>Lokalebooking</button>
