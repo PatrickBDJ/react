@@ -1,4 +1,7 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body,
+html {
   font-family: 'Inter', sans-serif;
 }
 
@@ -20,7 +23,7 @@
 .App-header {
   background-color: white;
   display: flex;
-/*   flex-direction: column; */
+  /*   flex-direction: column; */
   align-items: center;
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
@@ -31,14 +34,15 @@
 
 }
 
-.navbar-buttons button{
+.navbar-buttons button {
   background: none;
   border: none;
   color: #00163B;
   font-weight: 600;
   font-size: 22px;
 }
-.navbar-buttons button:hover{
+
+.navbar-buttons button:hover {
   text-decoration: underline;
   cursor: pointer;
   font-weight: 800;
@@ -48,36 +52,37 @@
   display: flex;
   flex-direction: column;
 } */
-.overview-text{
+.overview-text {
   border: 1px black solid;
   width: 50%;
   position: relative;
   left: 25%;
 }
 
-#booking-button{
+#booking-button {
   box-sizing: border-box;
   background-color: #385C7F;
-  border:none;
-  border-radius: 11px; 
+  border: none;
+  border-radius: 11px;
   font-size: 42px;
   color: white;
 }
-#booking-button:hover{
+
+#booking-button:hover {
   background-color: #577FA7;
   cursor: pointer;
 
 }
 
-#overview-button{
+#overview-button {
   text-decoration: underline;
   cursor: pointer;
   font-weight: 800;
 }
 
-#logo-styling{
+#logo-styling {
   background-color: white;
-  
+
 }
 
 .App-link {
@@ -88,6 +93,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
