@@ -18,7 +18,7 @@ function TheHeader() {
     <header className="App-header">
       <img src={cphlogo} alt="Logo" id="logo-styling" />
       <div className="navbar-buttons">
-        <button>Min oversigt</button>
+        <button id="overview-button"> Min oversigt</button>
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}

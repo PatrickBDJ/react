@@ -26,10 +26,7 @@ export default function MainContent() {
 
   return (
     <main>
-      <h1>Min oversigt</h1>
-      <h3>Zainab Waleed Abbas</h3>
-      <h3>Mine bookinger</h3>
-      <p>Du har ingen eksisterende bookinger i øjeblikket. (Erstattes med Firebase oversigt)</p>
+
       {bookings.map((booking) => {
         return <SingleBooking date={booking.date} room={booking.room} />;
       })}
