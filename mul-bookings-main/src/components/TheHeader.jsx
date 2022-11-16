@@ -1,7 +1,7 @@
 import BookingForm from "./BookingForm.jsx";
 import Modal from "react-modal";
 import { useState } from "react";
-import cphlogo from "../assets/cphlogo.png"
+import cphlogo from "../assets/cphlogo.svg";
 
 function TheHeader() {
   const [modalIsOpen, setModalIsOpen] = useState(false);

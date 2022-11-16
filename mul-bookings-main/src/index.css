@@ -1,15 +1,50 @@
-body {
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body,
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html h1 {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+html h2 {
+  font-weight: 600;
+  font-size: 34px;
+}
+
+html h3 {
+  font-weight: 500;
+}
+
+html p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+header {
+  font-size: 26px;
+}
+
+button {
+  font-size: 42px;
+}
+
+.small-button {
+  font-size: 20px;
+}
+
+.switch-button {
+  font-size: 24px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap%27');
