@@ -1,6 +1,8 @@
 #info-styling {
     width: 35px;
+}
+
+.overview {
     display: flex;
-
-
+    justify-content: center;
 }
