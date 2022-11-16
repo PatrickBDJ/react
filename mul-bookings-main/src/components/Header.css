@@ -1,14 +1,7 @@
 /* Header */
-
 .App-logo {
     height: 40vmin;
     pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
 }
 
 .App-header {
@@ -20,72 +13,11 @@
     font-size: calc(10px + 2vmin);
     color: white;
     padding: 5px 20px 0 20px;
-    border-bottom: #00163B 1px solid;
     /* Forsøg med drop shadow */
+    box-shadow: 0 4px 8px 0 #00000010, 0 6px 20px 0 #00000010;
 
-}
-
-.navbar-buttons button {
-    background: none;
-    border: none;
-    color: #00163B;
-    font-weight: 600;
-    font-size: 22px;
-}
-
-.navbar-buttons button:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    font-weight: 800;
-}
-
-/* .overview{
-    display: flex;
-    flex-direction: column;
-  } */
-.overview-text {
-    border: 1px black solid;
-    width: 50%;
-    position: relative;
-    left: 25%;
-}
-
-#booking-button {
-    box-sizing: border-box;
-    background-color: #385C7F;
-    border: none;
-    border-radius: 11px;
-    font-size: 42px;
-    color: white;
-}
-
-#booking-button:hover {
-    background-color: #577FA7;
-    cursor: pointer;
-
-}
-
-#overview-button {
-    text-decoration: underline;
-    cursor: pointer;
-    font-weight: 800;
 }
 
 #logo-styling {
-    background-color: white;
-
-}
-
-.App-link {
-    color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
+    width: 250px;
 }

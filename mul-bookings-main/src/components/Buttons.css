@@ -1,0 +1,45 @@
+.navbar-buttons button {
+    background: none;
+    border: none;
+    color: #00163B;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.navbar-buttons button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+/* .overview{
+    display: flex;
+    flex-direction: column;
+  } */
+.overview-text {
+    border: 1px black solid;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+#booking-button {
+    box-sizing: border-box;
+    background-color: #385C7F;
+    border: none;
+    border-radius: 11px;
+    font-size: 42px;
+    color: white;
+}
+
+#booking-button:hover {
+    background-color: #577FA7;
+    cursor: pointer;
+
+}
+
+#overview-button {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 800;
+}
