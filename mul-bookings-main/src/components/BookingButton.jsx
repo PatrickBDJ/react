@@ -23,17 +23,17 @@ function BookingButton() {
           <h3>Zainab Waleed Abbas</h3>
         </div>
         <div className="my-bookings">
-          <img src={calender} alt="Kalender" className="profil-styling" />
+          <img src={calender} alt="Kalender" className="calender-styling" />
           <h3>Mine bookinger</h3>
         </div>
-        <p>Du har ingen eksisterende bookinger i øjeblikket. (Erstattes med Firebase oversigt)</p>
+        <p>Du har ingen eksisterende bookinger i øjeblikket.</p>
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
           contentLabel="Create booking form">
           <BookingForm />
         </Modal>
-        <button onClick={openModal} id="booking-button">Ny booking</button>
+        <button onClick={openModal} id="booking-button"> Ny booking</button>
       </div>
     </div>
   );

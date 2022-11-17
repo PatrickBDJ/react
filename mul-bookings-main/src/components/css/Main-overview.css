@@ -14,12 +14,46 @@
 
 .profil {
     display: flex;
+    align-items: center;
+    margin: 40px 0 66px 32px;
+}
+
+.profil-styling {
+    height: 49px;
+    margin-right: 31px;
+}
+
+.calender-styling {
+    height: 49px;
+    margin-right: 20px;
 }
 
 .my-bookings {
     display: flex;
+    align-items: center;
+    margin: 0 0 33px 33px;
 }
 
-.profil-styling {
-    width: 38px;
+.overview-text p {
+    font-style: italic;
+    margin: 0 0 242px 0;
+}
+
+#booking-button {
+    margin: 0 0 68px 0;
+    box-sizing: border-box;
+    background-color: #385C7F;
+    border: none;
+    border-radius: 14px;
+    font-size: 42px;
+    line-height: 51px;
+    font-weight: 700;
+    color: white;
+    width: 362px;
+    height: auto;
+}
+
+#booking-button:hover {
+    background-color: #577FA7;
+    cursor: pointer;
 }
