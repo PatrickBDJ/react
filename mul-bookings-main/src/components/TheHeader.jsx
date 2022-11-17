@@ -25,8 +25,8 @@ function TheHeader() {
           contentLabel="Create booking form">
           <BookingForm />
         </Modal>
-        <button onClick={openModal}>Lokalebooking</button>
-        <button>Log ud</button>
+        <button onClick={openModal} id="header-room-button">Lokalebooking</button>
+        <button id="header-logout-button">Log ud</button>
       </div>
     </header>
   );

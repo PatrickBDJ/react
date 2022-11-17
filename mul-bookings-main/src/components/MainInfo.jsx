@@ -7,7 +7,7 @@ function MainInfo() {
         <div className="App-div">
             <div className="overview">
                 <h1>Min oversigt</h1>
-                <img src={info} alt="Info" id="info-styling" />
+                <a href=""><img src={info} alt="Info" id="info-styling" /></a>
             </div>
         </div>
     );

@@ -1,5 +1,8 @@
 #info-styling {
     width: 35px;
+    position: absolute;
+    right: 2%;
+    margin-top: 3%;
 }
 
 .overview {
