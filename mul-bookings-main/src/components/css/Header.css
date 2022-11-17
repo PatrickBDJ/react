@@ -35,10 +35,10 @@
 }
 
 
-#header-room-button:hover{
-    text-decoration: underline;   
+#header-room-button:hover {
+    border-bottom: 4px solid #00163B;
 }
 
-#header-logout-button:hover{
-    text-decoration: underline;   
+#header-logout-button:hover {
+    border-bottom: 4px solid #00163B;
 }
