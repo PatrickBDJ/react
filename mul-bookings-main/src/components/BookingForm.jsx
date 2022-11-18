@@ -26,10 +26,10 @@ export default function BookingForm() {
       <br />
       <form id="booking-modal">
         <div>
-          <label class="label-title-styling">Lokaletype:</label>
           <div class="btn-group">
-            <button id="active-roomtype">Undervisningslokaler</button>
+            <label class="label-title-styling">Lokaletype:</label>
             <button id="inactive-roomtype">Mødelokaler</button>
+            <button id="active-roomtype">Undervisningslokaler</button>
           </div>
         </div>
         <br />
