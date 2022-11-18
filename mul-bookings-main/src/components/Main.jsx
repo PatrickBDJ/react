@@ -1,4 +1,4 @@
-import BookingForm from "./BookingForm.jsx";
+import BookingModal from "./BookingModal.jsx";
 import Modal from "react-modal";
 import { useState } from "react";
 import profil from "../assets/profil.svg";
@@ -31,7 +31,7 @@ function BookingButton() {
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
           contentLabel="Create booking form">
-          <BookingForm />
+          <BookingModal />
         </Modal>
         <button onClick={openModal} id="booking-button"> Ny booking</button>
       </div>
