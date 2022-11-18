@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Check } from 'lucide-react';
 
-export default function BookingForm() {
+export default function BookingModal() {
   const [room, setRoom] = useState("");
   const [date, setDate] = useState(""); // date
 
@@ -25,15 +25,13 @@ export default function BookingForm() {
       <h2>Foretag ny booking</h2>
       <br />
       <form id="booking-modal">
-        <div>
-          <div class="btn-group">
-            <label class="label-title-styling">Lokaletype:</label>
-            <button id="inactive-roomtype">Mødelokaler</button>
-            <button id="active-roomtype">Undervisningslokaler</button>
-          </div>
+        <div class="btn-group">
+          <label class="label-title-styling">Lokaletype:</label>
+          <button id="inactive-roomtype">Mødelokaler</button>
+          <button id="active-roomtype">Undervisningslokaler</button>
         </div>
         <br />
-        <div>
+        <div class="btn-group">
           <label class="label-title-styling">Lokale:</label>
           <input class="input-styling"
             type="text"
@@ -41,17 +39,18 @@ export default function BookingForm() {
             name="room"
             value={room}
             onChange={handleRoom} />
+          <button id="select">Vælg</button>
         </div>
         <br />
-        <div>
+        <div class="btn-group">
           <label class="label-title-styling">Dato:</label>
           <input class="input-styling"
             type="text"
             placeholder="Dato: - f.eks. 15-10-2022"
             name="date"
             value={date}
-            onChange={handleDate}
-          />
+            onChange={handleDate} />
+          <button id="select">Vælg</button>
         </div>
         <br /> <br /> <br />
         <div>
@@ -59,10 +58,10 @@ export default function BookingForm() {
           <br />
           <button class="room-attributes room-attributes-inactive">32 kvm</button>
           <button class="room-attributes room-attributes-active">24 sidderpladser</button>
-          <button class="room-attributes room-attributes-inactive">Projektor: <Check size={20} /></button>
-          <button class="room-attributes room-attributes-active">Tavle: <Check size={20} /></button>
+          <button class="room-attributes room-attributes-inactive">Projektor: <Check size={18} /></button>
+          <button class="room-attributes room-attributes-active">Tavle: <Check size={18} /></button>
         </div>
-        <button onClick={handleSubmit} id="header-booking-button">Gem booking</button>
+        <button onClick={handleSubmit} id="save-button">Gem booking</button>
       </form>
     </div>
   );

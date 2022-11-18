@@ -19,7 +19,6 @@
     border-bottom-left-radius: 6px;
 }
 
-
 #active-roomtype {
     background: #385C7F;
     color: white;
@@ -36,17 +35,58 @@
     background-color: #F2F2F2;
 }
 
+.btn-group input {
+    display: inline-block;
+    border: 1px solid #385C7F;
+    font-size: 24px;
+    padding: 8px 66px;
+    text-align: center;
+    cursor: pointer;
+}
 
-/* 
-#inactive-roomtype:hover {
-    color: white;
+.label-title-styling {
+    margin: 0 0.5% 0 0;
+}
+
+.input-styling {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.input-styling::placeholder {
+    color: #385C7F;
+}
+
+#select {
     background: #385C7F;
+    color: white;
+    font-weight: 400;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#select:hover {
+    background-color: #577FA7;
+}
+
+.input-styling:hover {
+    background-color: #F2F2F2;
+}
+
+#room-attribute-title {
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    color: #00163B;
+    margin: 0 0 0 200px;
+
 }
 
 .room-attributes {
     font-size: 20px;
     margin-left: 1%;
     margin-top: 1%;
+    padding: 3px 16px;
 }
 
 .room-attributes-active {
@@ -67,19 +107,21 @@
     background: #385C7F;
     color: white;
 
-} */
+}
 
-
-#header-booking-button {
+#save-button {
     background-color: #385C7F;
     border: none;
-    border-radius: 11px;
+    border-radius: 14px;
     color: white;
     width: 362px;
+    line-height: 51px;
+    font-weight: 700;
     height: auto;
     margin-top: 5%;
 }
 
-#booking-modal button {
+#save-button:hover {
+    background-color: #577FA7;
     cursor: pointer;
 }

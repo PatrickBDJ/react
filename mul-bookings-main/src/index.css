@@ -66,19 +66,3 @@ code {
 .form-div {
   text-align: center;
 }
-
-.input-styling {
-  background: white;
-  border: 1px solid #385C7F;
-  border-radius: 6px;
-  font-size: 24px;
-  color: #385C7F;
-}
-
-.input-styling::placeholder {
-  color: #385C7F;
-}
-
-.label-title-styling {
-  margin-right: 0.5%;
-}

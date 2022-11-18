@@ -4,7 +4,7 @@ import { useState } from "react";
 import profil from "../assets/profil.svg";
 import calender from "../assets/calender.svg";
 
-function BookingButton() {
+function Main() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -39,4 +39,4 @@ function BookingButton() {
   );
 }
 
-export default BookingButton;
+export default Main;
