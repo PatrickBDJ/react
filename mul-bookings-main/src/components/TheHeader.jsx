@@ -1,4 +1,4 @@
-import BookingForm from "./BookingForm.jsx";
+import BookingModal from "./BookingModal.jsx";
 import Modal from "react-modal";
 import { useState } from "react";
 import cphlogo from "../assets/cphlogo.svg";
@@ -23,7 +23,7 @@ function TheHeader() {
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
           contentLabel="Create booking form">
-          <BookingForm />
+          <BookingModal />
         </Modal>
         <button onClick={openModal} id="header-room-button">Lokalebooking</button>
         <button id="header-logout-button">Log ud</button>

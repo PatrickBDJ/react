@@ -21,6 +21,7 @@ html h2 {
 
 html h3 {
   font-weight: 500;
+  font-size: 32px;
 }
 
 html p {
@@ -54,30 +55,14 @@ code {
   flex-direction: column;
 } */
 
-#booking-modal{
+#booking-modal {
   text-align: center;
 }
 
-#room-attribute-title{
+#room-attribute-title {
   font-weight: 600;
 }
 
-.form-div{
+.form-div {
   text-align: center;
-}
-
-.input-styling{
-  background: white;
-  border: 1px solid #385C7F;
-  border-radius: 6px;
-  font-size: 24px;
-  color: #385C7F;
-}
-
-.input-styling::placeholder{
-  color: #385C7F;
-}
-
-.label-title-styling{
-  margin-right: 0.5%;
 }

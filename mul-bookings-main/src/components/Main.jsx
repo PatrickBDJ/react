@@ -1,10 +1,10 @@
-import BookingForm from "./BookingForm.jsx";
+import BookingModal from "./BookingModal.jsx";
 import Modal from "react-modal";
 import { useState } from "react";
 import profil from "../assets/profil.svg";
 import calender from "../assets/calender.svg";
 
-function BookingButton() {
+function Main() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -23,20 +23,20 @@ function BookingButton() {
           <h3>Zainab Waleed Abbas</h3>
         </div>
         <div className="my-bookings">
-          <img src={calender} alt="Kalender" className="profil-styling" />
+          <img src={calender} alt="Kalender" className="calender-styling" />
           <h3>Mine bookinger</h3>
         </div>
-        <p>Du har ingen eksisterende bookinger i øjeblikket. (Erstattes med Firebase oversigt)</p>
+        <p>Du har ingen eksisterende bookinger i øjeblikket.</p>
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
           contentLabel="Create booking form">
-          <BookingForm />
+          <BookingModal />
         </Modal>
-        <button onClick={openModal} id="booking-button">Ny booking</button>
+        <button onClick={openModal} id="booking-button"> Ny booking</button>
       </div>
     </div>
   );
 }
 
-export default BookingButton;
+export default Main;
