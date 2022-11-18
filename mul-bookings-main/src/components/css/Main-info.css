@@ -5,6 +5,10 @@
     margin-top: 3%;
 }
 
+#info-styling:hover{
+    cursor: pointer;
+}
+
 .overview {
     display: flex;
     justify-content: center;

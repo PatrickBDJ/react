@@ -26,7 +26,7 @@ function Main() {
           <img src={calender} alt="Kalender" className="calender-styling" />
           <h3>Mine bookinger</h3>
         </div>
-        <p>Du har ingen eksisterende bookinger i øjeblikket.</p>
+        <p id="no-bookings-text">Du har ingen eksisterende bookinger i øjeblikket.</p>
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}

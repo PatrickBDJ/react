@@ -32,7 +32,8 @@
 }
 
 #inactive-roomtype:hover {
-    background-color: #F2F2F2;
+    background-color: #385C7F;
+    color: white;
 }
 
 .btn-group input {
@@ -76,9 +77,8 @@
 #room-attribute-title {
     font-size: 22px;
     font-weight: 500;
-    display: flex;
+    /* display: flex; */
     color: #00163B;
-    margin: 0 0 0 200px;
 
 }
 
@@ -106,7 +106,13 @@
 .room-attributes-inactive:hover {
     background: #385C7F;
     color: white;
+    cursor: pointer;
+}
 
+.room-attributes-active:hover {
+    color: #385C7F;
+    background: white;
+    cursor: pointer;
 }
 
 #save-button {

@@ -52,10 +52,10 @@ export default function BookingModal() {
             onChange={handleDate} />
           <button id="select">Vælg</button>
         </div>
-        <br /> <br /> <br />
+        <br /> <br /> <br /> <br />
         <div>
           <label id="room-attribute-title">Lokalets egenskaber</label>
-          <br />
+          <br /> <br />
           <button class="room-attributes room-attributes-inactive">32 kvm</button>
           <button class="room-attributes room-attributes-active">24 sidderpladser</button>
           <button class="room-attributes room-attributes-inactive">Projektor: <Check size={18} /></button>
