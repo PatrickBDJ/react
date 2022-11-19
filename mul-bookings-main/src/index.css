@@ -11,17 +11,17 @@ html {
 
 html h1 {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 32px;
 }
 
 html h2 {
   font-weight: 600;
-  font-size: 34px;
+  font-size: 24px;
 }
 
 html h3 {
   font-weight: 500;
-  font-size: 32px;
+  font-size: 22px;
 }
 
 html p {
@@ -30,11 +30,11 @@ html p {
 }
 
 header {
-  font-size: 26px;
+  font-size: 16px;
 }
 
 button {
-  font-size: 42px;
+  font-size: 32px;
 }
 
 .small-button {
@@ -42,7 +42,7 @@ button {
 }
 
 .switch-button {
-  font-size: 24px;
+  font-size: 14px;
 }
 
 code {
@@ -70,6 +70,7 @@ code {
 input:focus::placeholder {
   color: transparent;
 }
-input:hover::placeholder{
+
+input:hover::placeholder {
   font-weight: 600;
 }
