@@ -1,4 +1,4 @@
-export default function SingleBooking({ date, room }) {
+export default function SingleBooking({ date, room, id }) {
   return (
     <div>
       <h1>"{room}"</h1>
@@ -8,3 +8,7 @@ export default function SingleBooking({ date, room }) {
     </div>
   );
 }
+
+
+// id skal fetch fra firebase
+// Modal til rediger med date og room
