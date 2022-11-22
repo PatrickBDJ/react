@@ -8,17 +8,19 @@ import MainContent from "./components/MainContent";
 import TheHeader from "./components/TheHeader";
 import MainInfo from "./components/MainInfo";
 import Main from "./components/Main";
+import {useState} from "react";
 
 
 /* import Name from "./Name"; */
 
 function App() {
+  const [bookings, setBookings] = useState([]);
   return (
     <div className="App">
-      <TheHeader />
+      <TheHeader setBookings={setBookings} />
       <MainInfo />
       <Main />
-      <MainContent />
+      <MainContent bookings={bookings} setBookings={setBookings}/>
     </div>
   );
 }

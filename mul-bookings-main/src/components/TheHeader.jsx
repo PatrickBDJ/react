@@ -3,7 +3,7 @@ import Modal from "react-modal";
 import { useState } from "react";
 import cphlogo from "../assets/cphlogo.svg";
 
-function TheHeader() {
+function TheHeader( {setBookings} ) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -23,7 +23,7 @@ function TheHeader() {
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
           contentLabel="Create booking form">
-          <BookingModal />
+          <BookingModal setBookings={setBookings} />
         </Modal>
         <button onClick={openModal} id="header-room-button">Lokalebooking</button>
         <button id="header-logout-button">Log ud</button>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Check } from 'lucide-react';
 
-export default function BookingModal() {
+export default function BookingModal( {setBookings}) {
   const [room, setRoom] = useState("");
   const [date, setDate] = useState(""); // date
 
@@ -26,7 +26,9 @@ export default function BookingModal() {
     const result = await response.json();
     console.log(result);
     booking.id = result.name;
-    console.log(booking);
+    setBookings((previousValue) =>{
+      return[...previousValue, booking ]
+    });
   };
 
   return (
