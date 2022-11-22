@@ -3,7 +3,7 @@ import { transformToArray } from "../firebase-utils";
 import SingleBooking from "./SingleBooking";
 
 const url =
-  "https://mul-3rd-sem-default-rtdb.europe-west1.firebasedatabase.app/bookings.json";
+  'https://react-intro-a3485-default-rtdb.europe-west1.firebasedatabase.app/.json';
 
 export default function MainContent() {
   const [bookings, setBookings] = useState([]);

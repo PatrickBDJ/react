@@ -9,6 +9,7 @@ import TheHeader from "./components/TheHeader";
 import MainInfo from "./components/MainInfo";
 import Main from "./components/Main";
 
+
 /* import Name from "./Name"; */
 
 function App() {
