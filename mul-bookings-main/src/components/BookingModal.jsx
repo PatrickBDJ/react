@@ -36,15 +36,15 @@ export default function BookingModal( {setBookings}) {
       <h2>Foretag ny booking</h2>
       <br />
       <form id="booking-modal">
-        <div class="btn-group">
-          <label class="label-title-styling">Lokaletype:</label>
+        <div className="btn-group">
+          <label className="label-title-styling">Lokaletype:</label>
           <button id="inactive-roomtype">Mødelokaler</button>
           <button id="active-roomtype">Undervisningslokaler</button>
         </div>
         <br />
-        <div class="btn-group">
-          <label class="label-title-styling">Lokale:</label>
-          <input class="input-styling"
+        <div className="btn-group">
+          <label className="label-title-styling">Lokale:</label>
+          <input className="input-styling"
             type="text"
             placeholder="Lokale nummer:"
             name="room"
@@ -53,9 +53,9 @@ export default function BookingModal( {setBookings}) {
           <button id="select">Vælg</button>
         </div>
         <br />
-        <div class="btn-group">
-          <label class="label-title-styling">Dato:</label>
-          <input class="input-styling"
+        <div className="btn-group">
+          <label className="label-title-styling">Dato:</label>
+          <input className="input-styling"
             type="text"
             placeholder="Dato: - f.eks. 15-10-2022"
             name="date"
@@ -67,10 +67,10 @@ export default function BookingModal( {setBookings}) {
         <div>
           <label id="room-attribute-title">Lokalets egenskaber</label>
           <br /> <br />
-          <button class="room-attributes room-attributes-inactive">32 kvm</button>
-          <button class="room-attributes room-attributes-active">24 sidderpladser</button>
-          <button class="room-attributes room-attributes-inactive">Projektor: <Check size={18} /></button>
-          <button class="room-attributes room-attributes-active">Tavle: <Check size={18} /></button>
+          <button className="room-attributes room-attributes-inactive">32 kvm</button>
+          <button className="room-attributes room-attributes-active">24 sidderpladser</button>
+          <button className="room-attributes room-attributes-inactive">Projektor: <Check size={18} /></button>
+          <button className="room-attributes room-attributes-active">Tavle: <Check size={18} /></button>
         </div>
         <button onClick={handleSubmit} id="save-button">Gem booking</button>
       </form>
