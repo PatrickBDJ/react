@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Check } from 'lucide-react';
+import {useRef} from 'react';
 
 export default function BookingModal( {setBookings}) {
+  const inputRef3 = useRef(null);
+  const inputRef4 = useRef(null);
   const [room, setRoom] = useState("");
   const [date, setDate] = useState(""); // date
 
@@ -15,8 +18,8 @@ export default function BookingModal( {setBookings}) {
   };
 
     const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log("You clicked");
+    /* e.preventDefault(); */
+ /*    console.log("You clicked"); */
     let booking = {room: room, date: date};
     const response = await fetch('https://react-intro-a3485-default-rtdb.europe-west1.firebasedatabase.app/.json',
     {
@@ -49,8 +52,8 @@ export default function BookingModal( {setBookings}) {
             placeholder="Lokale nummer:"
             name="room"
             value={room}
-            onChange={handleRoom} />
-          <button id="select">Vælg</button>
+            onChange={handleRoom} ref={inputRef3}/>
+          <button type="button" id="select" onClick={() => {inputRef3.current.focus()}}>Vælg</button>
         </div>
         <br />
         <div className="btn-group">
@@ -60,8 +63,8 @@ export default function BookingModal( {setBookings}) {
             placeholder="Dato: - f.eks. 15-10-2022"
             name="date"
             value={date}
-            onChange={handleDate} />
-          <button id="select">Vælg</button>
+            onChange={handleDate} ref={inputRef4}/>
+          <button type="button" id="select" onClick={() => {inputRef4.current.focus()}}>Vælg</button>
         </div>
         <br /> <br /> <br /> <br />
         <div>
