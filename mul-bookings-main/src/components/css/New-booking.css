@@ -1,0 +1,41 @@
+.new-booking {
+    margin: 10px auto;
+    width: 363px;
+    border: 2px solid #385C7F;
+    border-radius: 9px;
+}
+
+.new-booking h1 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.new-booking p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.new-booking-buttons button {
+    cursor: pointer;
+    font-size: 20px;
+    color: #385C7F;
+    margin: 6px;
+    border: 1px solid #385C7F;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.new-booking-buttons button:hover {
+    background-color: #F2F2F2;
+}
+
+#delete-button {
+    background-color: #FBB040;
+    color: #fff;
+    border: 1px solid #FBB040;
+}
+
+#delete-button:hover {
+    background-color: #DC8E1B;
+    border: 1px solid #DC8E1B;
+}

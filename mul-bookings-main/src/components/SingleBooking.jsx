@@ -3,39 +3,44 @@ import { useState } from "react";
 import EditModal from "./EditModal";
 import { Edit } from "lucide-react";
 
- function SingleBooking({ date, room, id }) {
+function SingleBooking({ date, room, id }) {
 
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-  
-    const openModal = () => {
-      setModalIsOpen(true);
-    };
-  
-    const closeModal = () => {
-      setModalIsOpen(false);
-    };
-  
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
-/*   async function deleteData(id) {
-    const response = await fetch(url + "/" + id + ".json", {
-      method: "DELETE",
-    });
-    return response;
-  } */
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+
+  /*   async function deleteData(id) {
+      const response = await fetch(url + "/" + id + ".json", {
+        method: "DELETE",
+      });
+      return response;
+    } */
 
   return (
     <div>
-      <p>{id}</p>
-      <h1>"{room}"</h1>
-      <p>{date}</p>
+      <div className="new-booking">
+        <p>{id}</p>
+        <h1>Lokale: {room}</h1>
+        <p>Dato: {date}</p>
+      </div>
       <Modal
-          isOpen={modalIsOpen}
-          onRequestClose={closeModal}
-          contentLabel="Create booking form">
-      <EditModal/>
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Create booking form">
+        <EditModal />
       </Modal>
-      <button onClick={openModal}>Rediger</button>
-      <button >Slet</button>
+      <div className="new-booking-buttons">
+        <button onClick={openModal}>Ændre booking</button>
+        <button id="delete-button" >Slet</button>
+        <button >Lokale info</button>
+      </div>
     </div>
   );
 }
