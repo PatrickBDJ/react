@@ -10,4 +10,5 @@ export default function SingleBooking({ date, room, id }) {
 }
 
 
+// id skal fetch fra firebase
 // Modal til rediger med date og room
