@@ -24,6 +24,7 @@ export default function MainContent({bookings, setBookings}) {
       const body = await response.json();
       // Vi laver det mærkelige firebase object om til et array.
       const asArray = transformToArray(body);
+ /*      console.log(asArray); */
       setBookings(asArray);
     } else{
       setIsError(true);
@@ -40,7 +41,7 @@ export default function MainContent({bookings, setBookings}) {
       {isLoading && <Spinner/>}
       {isError && <p> Der er sket en uventet fejl, prøv igen senere,</p>}
       {bookings.map((booking) => {
-        return <SingleBooking date={booking.date} room={booking.room} />;
+        return <SingleBooking date={booking.date} room={booking.room} id={booking.id} setBookings={setBookings} bookings={bookings}/>;
       })}
     </main>
   );

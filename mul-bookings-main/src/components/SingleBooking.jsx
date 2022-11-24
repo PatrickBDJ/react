@@ -3,7 +3,7 @@ import { useState } from "react";
 import EditModal from "./EditModal";
 import { Edit } from "lucide-react";
 
-function SingleBooking({ date, room, id }) {
+function SingleBooking({ date, room, id, setBookings, bookings }) {
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -16,17 +16,18 @@ function SingleBooking({ date, room, id }) {
   };
 
 
-  /*   async function deleteData(id) {
-      const response = await fetch(url + "/" + id + ".json", {
-        method: "DELETE",
-      });
-      return response;
-    } */
+  const handleDelete = async (e) => {
+    const response = await fetch(`https://react-intro-a3485-default-rtdb.europe-west1.firebasedatabase.app/${id}/.json`,
+    {
+      method: 'DELETE', 
+    })
+    const newBookings = bookings.filter(el => el.id != id);
+    setBookings(newBookings);
+  };
 
   return (
     <div>
       <div className="new-booking">
-        <p>{id}</p>
         <h1>Lokale: {room}</h1>
         <p>Dato: {date}</p>
       </div>
@@ -38,7 +39,7 @@ function SingleBooking({ date, room, id }) {
       </Modal>
       <div className="new-booking-buttons">
         <button onClick={openModal}>Ændre booking</button>
-        <button id="delete-button" >Slet</button>
+        <button id="delete-button" onClick={handleDelete}>Slet</button>
         <button >Lokale info</button>
       </div>
     </div>

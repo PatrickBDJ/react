@@ -1,8 +1,23 @@
 import {useRef} from 'react';
 
-function EditModal(){
+
+
+
+
+
+function EditModal(date, room, id, setBookings, bookings){
     const inputRef1 = useRef(null);
     const inputRef2 = useRef(null);
+
+    const handleEdit = async (e) => {
+      const response = await fetch(`https://react-intro-a3485-default-rtdb.europe-west1.firebasedatabase.app/${id}/.json`,
+      {
+        method: 'Edit', 
+      })
+      const newBookings = bookings.filter(el => el.id != id);
+      setBookings(newBookings);
+    };
+
     return(
         <div className="form-div">
         <h2>Ændring af booking</h2>
