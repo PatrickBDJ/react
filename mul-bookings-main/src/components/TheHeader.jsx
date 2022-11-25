@@ -22,7 +22,7 @@ function TheHeader( {setBookings} ) {
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
-          contentLabel="Create booking form">
+          contentLabel="Create booking form" ariaHideApp={false}>
           <BookingModal setBookings={setBookings} />
         </Modal>
         <button onClick={openModal} id="header-room-button">Lokalebooking</button>

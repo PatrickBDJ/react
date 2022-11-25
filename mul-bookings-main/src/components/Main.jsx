@@ -4,7 +4,7 @@ import { useState } from "react";
 import profil from "../assets/profil.svg";
 import calender from "../assets/calender.svg";
 
-function Main() {
+function Main({bookings}) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -15,7 +15,16 @@ function Main() {
     setModalIsOpen(false);
   };
 
+/*   const ifEmpty = () => {
+    if(bookings.length >= 0){
+      return(true);
+    } else{
+      return(false);
+    }
+  }; */
+
   return (
+/*     <div>{ifEmpty ? */
     <div className="App-div">
       <div className="overview-text">
         <div className="profil">
@@ -26,16 +35,17 @@ function Main() {
           <img src={calender} alt="Kalender" className="calender-styling" />
           <h3>Mine bookinger</h3>
         </div>
-        <p id="no-bookings-text">Du har ingen eksisterende bookinger i øjeblikket.</p>
+        <p id="no-bookings-text">Se bookinger længere nede på siden:</p>
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
-          contentLabel="Create booking form">
+          contentLabel="Create booking form" ariaHideApp={false}>
           <BookingModal />
         </Modal>
         <button onClick={openModal} id="booking-button"> Ny booking</button>
       </div>
     </div>
+ /*    : <div><h3>Hej</h3></div>}</div> */
   );
 }
 

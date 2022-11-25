@@ -24,6 +24,7 @@ export default function MainContent({bookings, setBookings}) {
       const body = await response.json();
       // Vi laver det mærkelige firebase object om til et array.
       const asArray = transformToArray(body);
+      asArray.reverse();
  /*      console.log(asArray); */
       setBookings(asArray);
     } else{

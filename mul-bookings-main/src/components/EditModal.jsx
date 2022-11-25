@@ -1,11 +1,12 @@
+import Modal from "react-modal";
 import {useRef} from 'react';
 import { useState } from "react";
 import { Check } from 'lucide-react';
 
-
-function EditModal( id, bookings, setBookings){
+function EditModal({ id, bookings, setBookings, closeModal}){
     const inputRef1 = useRef(null);
     const inputRef2 = useRef(null);
+  /*   console.log(id); */
 
     const [room, setRoom] = useState("");
     const [date, setDate] = useState(""); // date
@@ -19,16 +20,26 @@ function EditModal( id, bookings, setBookings){
       setDate(event.target.value);
     };
 
-    const handleDelete = async (e) => {
+    const handleEdit = async (e) => {
+      /* e.preventDefault(); */
+      let booking = {room: room, date: date};
       const response = await fetch(`https://react-intro-a3485-default-rtdb.europe-west1.firebasedatabase.app/${id}/.json`,
       {
         method: 'PUT', 
+        body: JSON.stringify(booking)
       })
-      const newBookings = bookings.filter(el => el.id != id);
-      setBookings(newBookings);
+      const result = await response.json();
+      console.log(result);
+/*       booking.id = result.name; */
+
+/*       const newBookings = bookings.filter(el => el.id != id);
+      setBookings(newBookings); */
+
+      console.log(id);
+  /*     closeModal(); */
     };
 
-    console.log(id);
+  
 
     return(
         <div className="form-div">
@@ -56,7 +67,7 @@ function EditModal( id, bookings, setBookings){
             <button type="button" id="select" onClick={() => {inputRef2.current.focus()}} >Vælg</button>
           </div>
           <br /> <br /> <br /> <br />
-          <button type="button" id="save-button" onClick={handleDelete}>Gem booking</button>
+          <button /* type="button" */ id="save-button" onClick={handleEdit}>Gem booking</button>
         </form>
       </div>
     );

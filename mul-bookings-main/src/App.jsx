@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <TheHeader setBookings={setBookings} />
       <MainInfo />
-      <Main />
+      <Main bookings={bookings}/>
       <MainContent bookings={bookings} setBookings={setBookings} />
     </div>
   );
