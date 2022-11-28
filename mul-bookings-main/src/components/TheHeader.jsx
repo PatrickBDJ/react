@@ -2,6 +2,7 @@ import BookingModal from "./BookingModal.jsx";
 import Modal from "react-modal";
 import { useState } from "react";
 import cphlogo from "../assets/cphlogo.svg";
+import LogOffModal from "./LogOffModal.jsx";
 
 function TheHeader( {setBookings} ) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -13,6 +14,17 @@ function TheHeader( {setBookings} ) {
   const closeModal = () => {
     setModalIsOpen(false);
   };
+  
+  const [modalIsOpen1, setModalIsOpen1] = useState(false);
+
+  const openModal1 = () => {
+    setModalIsOpen1(true);
+  };
+
+  const closeModal1 = () => {
+    setModalIsOpen1(false);
+  };
+
 
   return (
     <header className="App-header">
@@ -26,7 +38,14 @@ function TheHeader( {setBookings} ) {
           <BookingModal setBookings={setBookings} />
         </Modal>
         <button onClick={openModal} id="header-room-button">Lokalebooking</button>
-        <button id="header-logout-button">Log ud</button>
+
+        <Modal
+          isOpen={modalIsOpen1}
+          onRequestClose={closeModal1}
+          contentLabel="Log Off" ariaHideApp={false} id="log-off-modal">
+          <LogOffModal />
+        </Modal>
+        <button id="header-logout-button" onClick={openModal1}>Log ud</button>
       </div>
     </header>
   );

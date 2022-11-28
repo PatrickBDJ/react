@@ -53,7 +53,7 @@ export default function BookingModal( {setBookings}) {
             name="room"
             value={room}
             onChange={handleRoom} ref={inputRef3}/>
-          <button type="button" id="select" onClick={() => {inputRef3.current.focus()}}>Vælg</button>
+          <button type="button" className="select" onClick={() => {inputRef3.current.focus()}}>Vælg</button>
         </div>
         <br />
         <div className="btn-group">
@@ -64,7 +64,7 @@ export default function BookingModal( {setBookings}) {
             name="date"
             value={date}
             onChange={handleDate} ref={inputRef4}/>
-          <button type="button" id="select" onClick={() => {inputRef4.current.focus()}}>Vælg</button>
+          <button type="button" className="select" onClick={() => {inputRef4.current.focus()}}>Vælg</button>
         </div>
         <br /> <br /> <br /> <br />
         <div>

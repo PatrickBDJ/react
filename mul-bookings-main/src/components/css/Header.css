@@ -42,3 +42,32 @@
 #header-logout-button:hover {
     border-bottom: 4px solid #00163B;
 }
+
+#log-off-modal{
+    inset: 0 !important;
+    text-align: center;
+    background: #00163B !important;
+    
+}
+
+#log-off-text{
+    margin-top: 5%;
+    color: #FBB040;
+}
+
+#login-button {
+    background-color: #ff9900;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    width: 362px;
+    line-height: 51px;
+    font-weight: 700;
+    height: auto;
+    margin-top: 3%;
+}
+
+#login-button:hover {
+    background-color: #577FA7;
+    cursor: pointer;
+}

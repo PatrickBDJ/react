@@ -53,7 +53,7 @@ function EditModal({ id, bookings, setBookings, closeModal}){
               name="room"
               value={room}
               onChange={handleRoom}  ref={inputRef1}/>
-            <button type="button" id="select" onClick={() => {inputRef1.current.focus()}}>Vælg</button>
+            <button type="button" className="select" onClick={() => {inputRef1.current.focus()}}>Vælg</button>
           </div>
           <br />
           <div className="btn-group">
@@ -64,7 +64,7 @@ function EditModal({ id, bookings, setBookings, closeModal}){
               name="date"
               value={date}
               onChange={handleDate} ref={inputRef2}/>
-            <button type="button" id="select" onClick={() => {inputRef2.current.focus()}} >Vælg</button>
+            <button type="button" className="select" onClick={() => {inputRef2.current.focus()}} >Vælg</button>
           </div>
           <br /> <br /> <br /> <br />
           <button /* type="button" */ id="save-button" onClick={handleEdit}>Gem booking</button>

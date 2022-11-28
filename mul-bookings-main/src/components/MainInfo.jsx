@@ -1,4 +1,7 @@
 import info from "../assets/info.svg";
+import Modal from "react-modal";
+import { useState } from "react";
+import MainInfoModal from "./MainInfoModal";
 
 
 function MainInfo() {
@@ -12,6 +15,12 @@ function MainInfo() {
       setModalIsOpen(false);
     };
 
+/*     const modalStyling = {
+        content: {
+            width: '50%',
+        }
+    }; */
+
     return (
         <div className="App-div">
             <div className="overview">
@@ -19,8 +28,8 @@ function MainInfo() {
                 <Modal
                     isOpen={modalIsOpen}
                     onRequestClose={closeModal}
-                    contentLabel="Create booking form" ariaHideApp={false}>
-        
+                    contentLabel="Information modal" ariaHideApp={false} /* style={modalStyling} */ id="info-modal-style">
+                <MainInfoModal></MainInfoModal>
                 </Modal>
                 <a href="#" onClick={openModal}><img src={info} alt="Info" id="info-styling" /></a>
             </div>

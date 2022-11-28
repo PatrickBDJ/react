@@ -2,7 +2,7 @@
     width: 35px;
     position: absolute;
     right: 2%;
-    margin-top: 3%;
+    margin-top: 1.5%;
 }
 
 #info-styling:hover{
@@ -13,3 +13,26 @@
     display: flex;
     justify-content: center;
 }
+
+#info-span{
+    font-weight: 600;
+}
+
+.information-button{
+    text-align: center;
+}
+
+#info-modal-style{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-left{
+    float: left;
+}
+
+.information-text-div p{
+    margin-bottom: 5%;
+}
+
