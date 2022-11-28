@@ -39,3 +39,35 @@
     background-color: #DC8E1B;
     border: 1px solid #DC8E1B;
 }
+
+
+/* delete confirmation modal */
+
+#delete-confirmation-modal{
+    width: 25%;
+    height: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.delete-buttons{
+    box-sizing: border-box;
+    background-color: #385C7F;
+    border: none;
+    border-radius: 14px;
+/*     font-size: 32px;
+    line-height: 51px;
+    font-weight: 700; */
+    color: white;
+/*     width: 362px; */
+    height: auto;
+}
+
+.delete-buttons:hover{
+    background-color: #577FA7;
+    cursor: pointer;
+}
+
+.delete-div{
+    text-align: center;
+}
