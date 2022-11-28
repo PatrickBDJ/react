@@ -2,14 +2,27 @@ import info from "../assets/info.svg";
 
 
 function MainInfo() {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    const openModal = () => {
+      setModalIsOpen(true);
+    };
+  
+    const closeModal = () => {
+      setModalIsOpen(false);
+    };
 
     return (
         <div className="App-div">
             <div className="overview">
                 <h1>Min oversigt</h1>
-                <a href=""><img src={info} alt="Info" id="info-styling" /></a>
-                
-{/*                 <img src={(info)} alt="Info" id="info-styling" /> */}
+                <Modal
+                    isOpen={modalIsOpen}
+                    onRequestClose={closeModal}
+                    contentLabel="Create booking form" ariaHideApp={false}>
+        
+                </Modal>
+                <a href="#" onClick={openModal}><img src={info} alt="Info" id="info-styling" /></a>
             </div>
         </div>
     );
