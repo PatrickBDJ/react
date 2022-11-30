@@ -1,8 +1,8 @@
-export default function RoomInfo({ }) {
+export default function RoomInfo({ date, room }) {
     return (
         <div className="room-info-text">
-            <h1>Rum</h1>
-            <h3>Dato</h3>
+            <h1>{room}</h1>
+            <h3>{date}</h3>
             <p>Lokaletype: Undervisningslokale</p>
             <p>Størrelse: 32 kvm</p>
             <p>Siddepladser: 20</p>
@@ -12,7 +12,3 @@ export default function RoomInfo({ }) {
         </div>
     );
 }
-
-
-
-// export default function ConfirmDelete({id, setBookings, bookings, handleDelete, closeModal1}){

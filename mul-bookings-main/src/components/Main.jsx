@@ -4,7 +4,7 @@ import { useState } from "react";
 import profil from "../assets/profil.svg";
 import calender from "../assets/calender.svg";
 
-function Main({bookings}) {
+function Main({ bookings }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -15,16 +15,16 @@ function Main({bookings}) {
     setModalIsOpen(false);
   };
 
-/*   const ifEmpty = () => {
-    if(bookings.length >= 0){
-      return(true);
-    } else{
-      return(false);
-    }
-  }; */
+  /*   const ifEmpty = () => {
+      if(bookings.length >= 0){
+        return(true);
+      } else{
+        return(false);
+      }
+    }; */
 
   return (
-/*     <div>{ifEmpty ? */
+    /*     <div>{ifEmpty ? */
     <div className="App-div">
       <div className="overview-text">
         <div className="profil">
@@ -45,7 +45,6 @@ function Main({bookings}) {
         <button onClick={openModal} id="booking-button"> Ny booking</button>
       </div>
     </div>
- /*    : <div><h3>Hej</h3></div>}</div> */
   );
 }
 

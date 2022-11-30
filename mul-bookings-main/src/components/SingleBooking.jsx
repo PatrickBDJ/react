@@ -78,7 +78,7 @@ function SingleBooking({ date, room, id, setBookings, bookings }) {
           isOpen={modalIsOpen2}
           onRequestClose={closeModal2}
           contentLabel="Room infomation" ariaHideApp={false}>
-          <RoomInfo closeModal2={closeModal2} />
+          <RoomInfo date={date} room={room} id={id} setBookings={setBookings} bookings={bookings} closeModal2={closeModal2} />
 
         </Modal>
         <button id="room-info" onClick={openModal2} >Lokale info</button>
