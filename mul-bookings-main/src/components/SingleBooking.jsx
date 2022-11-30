@@ -59,7 +59,7 @@ function SingleBooking({ date, room, id, setBookings, bookings }) {
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
-        contentLabel="Edit booking form" ariaHideApp={false}>
+        contentLabel="Edit booking form" ariaHideApp={false} id="info-modal-style">
         <EditModal date={date} room={room} id={id} setBookings={setBookings} bookings={bookings} closeModal={closeModal} />
       </Modal>
       <div className="new-booking-buttons">
@@ -77,7 +77,7 @@ function SingleBooking({ date, room, id, setBookings, bookings }) {
         <Modal
           isOpen={modalIsOpen2}
           onRequestClose={closeModal2}
-          contentLabel="Room infomation" ariaHideApp={false}>
+          contentLabel="Room infomation" ariaHideApp={false} id="info-modal-style">
           <RoomInfo date={date} room={room} id={id} setBookings={setBookings} bookings={bookings} closeModal2={closeModal2} />
 
         </Modal>

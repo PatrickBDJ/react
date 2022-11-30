@@ -39,7 +39,7 @@ function Main({ bookings }) {
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
-          contentLabel="Create booking form" ariaHideApp={false}>
+          contentLabel="Create booking form" ariaHideApp={false} id="info-modal-style">
           <BookingModal />
         </Modal>
         <button onClick={openModal} id="booking-button"> Ny booking</button>

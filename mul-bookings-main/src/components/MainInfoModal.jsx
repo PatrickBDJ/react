@@ -1,8 +1,3 @@
-
-import { Clock } from 'lucide-react';
-import { PiggyBank } from 'lucide-react';
-import { Trash2 } from 'lucide-react';
-import { Mail } from 'lucide-react';
 import hourglass from "../assets/hourglass.svg";
 import clock from "../assets/clock.svg";
 import piggybank from "../assets/piggybank.svg";
