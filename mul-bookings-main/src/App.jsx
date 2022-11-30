@@ -4,6 +4,7 @@ import './components/css/Header.css';
 import './components/css/Main-info.css';
 import './components/css/Main-overview.css';
 import './components/css/Booking-modal.css';
+import './components/css/Login.css';
 import './components/css/New-booking.css';
 import MainContent from "./components/MainContent";
 import TheHeader from "./components/TheHeader";
@@ -20,7 +21,7 @@ function App() {
     <div className="App">
       <TheHeader setBookings={setBookings} />
       <MainInfo />
-      <Main bookings={bookings}/>
+      <Main bookings={bookings} />
       <MainContent bookings={bookings} setBookings={setBookings} />
     </div>
   );

@@ -5,7 +5,7 @@
     margin-top: 1.5%;
 }
 
-#info-styling:hover{
+#info-styling:hover {
     cursor: pointer;
 }
 
@@ -14,25 +14,27 @@
     justify-content: center;
 }
 
-#info-span{
+#info-span {
     font-weight: 600;
 }
 
-.information-button{
+.information-button {
     text-align: center;
 }
 
-#info-modal-style{
+#info-modal-style {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.icon-left{
+.icon-left {
     float: left;
+    width: 25px;
+    margin: 1% 5% 5% 0;
 }
 
-.information-text-div p{
+.information-text-div p {
     margin-bottom: 5%;
+    text-align: left;
 }
-
