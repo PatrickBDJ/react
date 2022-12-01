@@ -4,7 +4,7 @@ import { useState } from "react";
 import cphlogo from "../assets/cphlogo.svg";
 import LogOffModal from "./LogOffModal.jsx";
 
-function TheHeader( {setBookings} ) {
+function TheHeader({ setBookings }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -14,7 +14,7 @@ function TheHeader( {setBookings} ) {
   const closeModal = () => {
     setModalIsOpen(false);
   };
-  
+
   const [modalIsOpen1, setModalIsOpen1] = useState(false);
 
   const openModal1 = () => {
@@ -34,7 +34,7 @@ function TheHeader( {setBookings} ) {
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
-          contentLabel="Create booking form" ariaHideApp={false}>
+          contentLabel="Create booking form" ariaHideApp={false} id="info-modal-style">
           <BookingModal setBookings={setBookings} />
         </Modal>
         <button onClick={openModal} id="header-room-button">Lokalebooking</button>

@@ -5,9 +5,20 @@
 
 }
 
+.logo-login {
+    display: flex;
+    justify-content: center;
+    margin: 10% 0 0 0;
+    color: #ffffff;
+}
+
+#login-styling {
+    width: 300px;
+}
+
 #log-off-text {
     margin-top: 5%;
-    color: #FBB040;
+    color: #ffffff;
 }
 
 #login-button {
