@@ -3,20 +3,19 @@ import {useRef} from 'react';
 import { useState } from "react";
 import { Check } from 'lucide-react';
 
-function EditModal({ id, bookings, setBookings, closeModal}){
+function EditModal({ id }){
     const inputRef1 = useRef(null);
     const inputRef2 = useRef(null);
   /*   console.log(id); */
 
     const [room, setRoom] = useState("");
-    const [date, setDate] = useState(""); // date
+    const [date, setDate] = useState("");
   
     const handleRoom = (event) => {
       const input = event.target.value;
       setRoom(input);
     };
     const handleDate = (event) => {
-      // date
       setDate(event.target.value);
     };
 
@@ -49,7 +48,7 @@ function EditModal({ id, bookings, setBookings, closeModal}){
             <label className="label-title-styling">Lokale:</label>
             <input className="input-styling"
               type="text"
-              placeholder="Lokale nummer:"
+              placeholder={"Lokale nummer:"}
               name="room"
               value={room}
               onChange={handleRoom}  ref={inputRef1}/>

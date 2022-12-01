@@ -4,9 +4,10 @@ import EditModal from "./EditModal";
 import { Edit } from "lucide-react";
 import ConfirmDelete from "./ConfirmDelete";
 import RoomInfo from "./RoomInfo";
+import BookingModal from "./BookingModal";
 
-function SingleBooking({ date, room, id, setBookings, bookings }) {
 
+function SingleBooking({ date, room, id, setBookings, bookings, kvm, seating, projector, blackboard}) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -50,6 +51,8 @@ function SingleBooking({ date, room, id, setBookings, bookings }) {
     closeModal1();
   };
 
+
+ /*  console.log(kvm); */
   return (
     <div>
       <div className="new-booking">
@@ -69,7 +72,7 @@ function SingleBooking({ date, room, id, setBookings, bookings }) {
           isOpen={modalIsOpen1}
           onRequestClose={closeModal1}
           contentLabel="Confirm deletion" ariaHideApp={false} id="delete-confirmation-modal">
-          <ConfirmDelete closeModal1={closeModal1} handleDelete={handleDelete} id={id} setBookings={setBookings} bookings={bookings} />
+          <ConfirmDelete closeModal1={closeModal1} handleDelete={handleDelete} />
         </Modal>
         <button id="delete-button" onClick={openModal1}>Slet</button>
 
@@ -78,13 +81,13 @@ function SingleBooking({ date, room, id, setBookings, bookings }) {
           isOpen={modalIsOpen2}
           onRequestClose={closeModal2}
           contentLabel="Room infomation" ariaHideApp={false} id="info-modal-style">
-          <RoomInfo date={date} room={room} id={id} setBookings={setBookings} bookings={bookings} closeModal2={closeModal2} />
-
+          <RoomInfo date={date} room={room} closeModal2={closeModal2} kvm={kvm} seating={seating} projector={projector} blackboard={blackboard}/>
         </Modal>
         <button id="room-info" onClick={openModal2} >Lokale info</button>
       </div>
     </div>
   );
+
 }
 
 export default SingleBooking;

@@ -42,8 +42,9 @@ export default function MainContent({bookings, setBookings}) {
       {isLoading && <Spinner/>}
       {isError && <p> Der er sket en uventet fejl, prøv igen senere,</p>}
       {bookings.map((booking) => {
-        return <SingleBooking date={booking.date} room={booking.room} id={booking.id} setBookings={setBookings} bookings={bookings}/>;
+        return <SingleBooking date={booking.date} room={booking.room} id={booking.id} setBookings={setBookings} bookings={bookings} kvm={booking.kvm} seating={booking.seating} blackboard={booking.blackboard} projector={booking.projector} />;
       })}
     </main>
   );
 }
+

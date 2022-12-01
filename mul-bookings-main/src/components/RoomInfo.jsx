@@ -1,14 +1,16 @@
-export default function RoomInfo({ date, room }) {
+
+
+export default function RoomInfo({ date, room, kvm, seating, projector, blackboard }) {
+/*     console.log(projector); */
     return (
         <div className="room-info-text">
             <h1>{room}</h1>
             <h3>{date}</h3>
             <p>Lokaletype: Undervisningslokale</p>
-            <p>Størrelse: 32 kvm</p>
-            <p>Siddepladser: 20</p>
-            <p>Projekter: Ja</p>
-            <p>Tavle: Ja</p>
-
+            <p>Kvadratmeter: {kvm}</p>
+            <p>Siddepladser: {seating}</p>
+            <p>Projektor: {projector == true ? "Ja" : "Nej"}</p>
+            <p>Tavle: {blackboard == true ? "Ja" : "Nej"}</p>       
         </div>
     );
 }

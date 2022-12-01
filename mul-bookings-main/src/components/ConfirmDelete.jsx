@@ -1,4 +1,4 @@
-export default function ConfirmDelete({ id, setBookings, bookings, handleDelete, closeModal1 }) {
+export default function ConfirmDelete({ handleDelete, closeModal1 }) {
 
     return (
         <div>
