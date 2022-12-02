@@ -3,8 +3,9 @@ import Modal from "react-modal";
 import { useState } from "react";
 import profil from "../assets/profil.svg";
 import calender from "../assets/calender.svg";
+import MainContent from "./MainContent.jsx";
 
-function Main({ bookings }) {
+function Main({ bookings, setBookings }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -35,7 +36,8 @@ function Main({ bookings }) {
           <img src={calender} alt="Kalender" className="calender-styling" />
           <h3>Mine bookinger</h3>
         </div>
-        <p id="no-bookings-text">Se bookinger længere nede på siden:</p>
+        <br />
+        <div>
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
@@ -43,6 +45,15 @@ function Main({ bookings }) {
           <BookingModal />
         </Modal>
         <button onClick={openModal} id="booking-button"> Ny booking</button>
+        </div>
+        <br />
+        <main>
+        <MainContent bookings={bookings} setBookings={setBookings} />
+        </main>
+        <br /> <br /> <br />
+
+{/*         <p id="no-bookings-text">Se bookinger længere nede på siden:</p> */}
+
       </div>
     </div>
   );

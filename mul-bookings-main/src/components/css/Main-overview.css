@@ -7,7 +7,7 @@
 .overview-text {
     /* position: absolute; */
     width: 565px;
-    height: 587px;
+    height: auto;
     border-radius: 29px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
 }
@@ -31,12 +31,12 @@
 .my-bookings {
     display: flex;
     align-items: center;
-    margin: 0 0 33px 33px;
+    margin: 0 0 0 33px;
 }
 
 .overview-text p {
     font-style: italic;
-    margin: 0 0 242px 0;
+/*     margin: 0 0 242px 0; */
 }
 
 #no-bookings-text {
