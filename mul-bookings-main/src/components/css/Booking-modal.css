@@ -75,12 +75,32 @@
 }
 
 #room-attribute-title {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 500;
     /* display: flex; */
     color: #00163B;
 
 }
+
+.room-attribute-labels {
+    font-size: 20px;
+    margin-bottom: 0.5%;
+}
+
+.room-attribute-labels input {
+    font-size: 20px;
+}
+
+.room-attribute-checkbox{
+    margin-bottom: 10px;
+}
+
+.room-attribute-checkbox input {
+    height: 18px;
+    width: 18px;
+
+}
+
 
 .room-attributes {
     font-size: 20px;
@@ -89,7 +109,7 @@
     padding: 3px 16px;
 }
 
-.room-attributes-active {
+/* .room-attributes-active {
     color: white;
     background: #385C7F;
     border: 1px solid #385C7F;
@@ -113,7 +133,7 @@
     color: #385C7F;
     background: white;
     cursor: pointer;
-}
+} */
 
 #save-button {
     background-color: #385C7F;

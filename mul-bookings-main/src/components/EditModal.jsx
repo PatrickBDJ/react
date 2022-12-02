@@ -52,14 +52,14 @@ function EditModal({ id }){
       <form id="booking-modal">
         <div className="btn-group">
           <label className="label-title-styling">Lokaletype:</label>
-          <button id="inactive-roomtype">Mødelokaler</button>
+{/*           <button id="inactive-roomtype">Mødelokaler</button> */}
           <button id="active-roomtype">Undervisningslokaler</button>
         </div>
         <br />
         <div className="btn-group">
           <label className="label-title-styling">Lokale:</label>
           <input className="input-styling"
-            type="text"
+            type="number"
             placeholder="Lokale nummer:"
             name="room"
             value={room}
@@ -70,7 +70,7 @@ function EditModal({ id }){
         <div className="btn-group">
           <label className="label-title-styling">Dato:</label>
           <input className="input-styling"
-            type="text"
+            type="date"
             placeholder="Dato: - f.eks. 15-10-2022"
             name="date"
             value={date}
@@ -81,23 +81,31 @@ function EditModal({ id }){
         <div>
           <label id="room-attribute-title">Lokalets egenskaber</label>
           <br /> <br />
-          
-          <label htmlFor="kvm">Kvadratmeter: </label>
-          <input type="number" name="kvm" id="kvm-input" placeholder="Indtast antal kvadratmeter:
-          " value={kvm} onChange={(event) => setKvm(event.target.value)}/> 
+          <div className="room-attribute-labels" >
+            <label htmlFor="kvm">Kvadratmeter: </label>
+            <input type="number" name="kvm" id="kvm-input" placeholder="Indtast antal kvadratmeter:
+            " value={kvm} onChange={(event) => setKvm(event.target.value)}/> 
+          </div>
           <br />
-          <label htmlFor="seating">Siddepladser: </label>
-          <input type="number" name="seating" id="seating-input" placeholder="Indtast antal siddepladser:
-          " value={seating} onChange={(event) => setSeating(event.target.value)}/>
+          <div className="room-attribute-labels" >
+            <label className="room-attribute-labels" htmlFor="seating">Siddepladser: </label>
+            <input type="number" name="seating" id="seating-input" placeholder="Indtast antal siddepladser:
+            " value={seating} onChange={(event) => setSeating(event.target.value)}/>
+          </div>
           <br />
-          <label htmlFor="projector">
-          Projekter:
-          <input type="checkbox" name="projector" id="projector-input" checked={projector} onChange={(event) => setProjector(event.target.checked)} />
-          </label>
-          <label>
-          Tavle:
-          <input type="checkbox" name="blackboard" id="blackboard-input" checked={blackboard} onChange={(event) => setBlackboard(event.target.checked)} />
-          </label>
+          <div className="room-attribute-labels room-attribute-checkbox" >
+            <label className="room-attribute-labels" htmlFor="blackboard">
+            Tavle:
+            <input type="checkbox" name="blackboard" id="blackboard-input" checked={blackboard} onChange={(event) => setBlackboard(event.target.checked)} />
+            </label>
+          </div>
+          <div className="room-attribute-labels room-attribute-checkbox" >
+            <label className="room-attribute-labels" htmlFor="projector">
+            Projekter:
+            <input type="checkbox" name="projector" id="projector-input" checked={projector} onChange={(event) => setProjector(event.target.checked)} />
+            </label>
+          </div>
+
 
           {/* <button type="button" className="room-attributes room-attributes-inactive">32 kvm</button> */}
           {/* <button type="button" className="room-attributes room-attributes-active">24 siddepladser</button> */}
