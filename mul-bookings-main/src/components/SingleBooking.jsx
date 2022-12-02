@@ -63,7 +63,7 @@ function SingleBooking({ date, room, id, setBookings, bookings, kvm, seating, pr
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Edit booking form" ariaHideApp={false} id="info-modal-style">
-        <EditModal date={date} room={room} id={id} setBookings={setBookings} bookings={bookings} closeModal={closeModal} />
+        <EditModal date={date} room={room} id={id} setBookings={setBookings} bookings={bookings} closeModal={closeModal}  />
       </Modal>
       <div className="new-booking-buttons">
         <button onClick={openModal}>Ændre booking</button>
