@@ -38,23 +38,24 @@ function Main({ bookings, setBookings }) {
         </div>
         <br />
         <div>
-        <Modal
-          isOpen={modalIsOpen}
-          onRequestClose={closeModal}
-          contentLabel="Create booking form" ariaHideApp={false} id="info-modal-style">
-          <BookingModal />
-        </Modal>
-        <button onClick={openModal} id="booking-button"> Ny booking</button>
+          <Modal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            contentLabel="Create booking form" ariaHideApp={false} id="info-modal-style">
+            <BookingModal />
+          </Modal>
+          <button onClick={openModal} id="booking-button"> Ny booking</button>
         </div>
         <br />
         <main>
-        <MainContent bookings={bookings} setBookings={setBookings} />
+          <MainContent bookings={bookings} setBookings={setBookings} />
         </main>
         <br /> <br /> <br />
 
-{/*         <p id="no-bookings-text">Se bookinger længere nede på siden:</p> */}
+        {/*         <p id="no-bookings-text">Se bookinger længere nede på siden:</p> */}
 
       </div>
+      <br /> <br />
     </div>
   );
 }
