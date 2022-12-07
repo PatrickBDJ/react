@@ -28,7 +28,7 @@ function MainBackground() {
                 <Modal
                     isOpen={modalIsOpen}
                     onRequestClose={closeModal}
-                    contentLabel="Information modal" ariaHideApp={false} /* style={modalStyling} */ id="info-modal-style">
+                    contentLabel="Information modal" ariaHideApp={false} id="info-modal-style">
                     <InfoModal />
                 </Modal>
                 <a href="#" onClick={openModal}><img src={info} alt="Info" id="info-styling" /></a>
