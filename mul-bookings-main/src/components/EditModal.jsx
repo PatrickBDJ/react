@@ -53,7 +53,7 @@ function EditModal({ id }){
         <div className="btn-group">
           <label className="label-title-styling">Lokaletype:</label>
 {/*           <button id="inactive-roomtype">Mødelokaler</button> */}
-          <button id="active-roomtype">Undervisningslokaler</button>
+          <button type="button" id="active-roomtype">Undervisningslokaler</button>
         </div>
         <br />
         <div className="btn-group">
