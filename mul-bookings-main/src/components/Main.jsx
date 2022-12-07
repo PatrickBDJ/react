@@ -36,7 +36,6 @@ function Main({ bookings, setBookings }) {
           <img src={calender} alt="Kalender" className="calender-styling" />
           <h3>Mine bookinger</h3>
         </div>
-        <br />
         <div>
           <Modal
             isOpen={modalIsOpen}
@@ -44,11 +43,11 @@ function Main({ bookings, setBookings }) {
             contentLabel="Create booking form" ariaHideApp={false} id="info-modal-style">
             <BookingModal />
           </Modal>
-          <button onClick={openModal} id="booking-button"> Ny booking</button>
         </div>
         <br />
         <main>
           <MainContent bookings={bookings} setBookings={setBookings} />
+          <button onClick={openModal} id="booking-button"> Ny booking</button>
         </main>
         <br /> <br /> <br />
 

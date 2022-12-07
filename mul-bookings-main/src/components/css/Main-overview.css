@@ -5,7 +5,6 @@
 }
 
 .overview-text {
-    /* position: absolute; */
     width: 565px;
     height: auto;
     border-radius: 29px;
@@ -15,7 +14,7 @@
 .profil {
     display: flex;
     align-items: center;
-    margin: 40px 0 66px 32px;
+    margin: 40px 0 36px 32px;
 }
 
 .profil-styling {
@@ -25,18 +24,21 @@
 
 .calender-styling {
     height: 49px;
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .my-bookings {
     display: flex;
     align-items: center;
-    margin: 0 0 0 33px;
+    margin: 0 0 0 27px;
+}
+
+.my-bookings h3 {
+    font-weight: 700;
 }
 
 .overview-text p {
     font-style: italic;
-/*     margin: 0 0 242px 0; */
 }
 
 #no-bookings-text {
@@ -45,17 +47,16 @@
 
 
 #booking-button {
-    /*     margin: 0 0 68px 0; */
     box-sizing: border-box;
     background-color: #385C7F;
     border: none;
-    border-radius: 14px;
+    border-radius: 11px;
     font-size: 32px;
     line-height: 51px;
     font-weight: 700;
     color: white;
-    width: 362px;
-    height: auto;
+    width: 262px;
+    height: 60px;
     /*     margin-bottom: 5%; */
 }
 
