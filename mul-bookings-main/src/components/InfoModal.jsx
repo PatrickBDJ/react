@@ -4,7 +4,7 @@ import piggybank from "../assets/piggybank.svg";
 import bin from "../assets/bin.svg";
 import mail from "../assets/mail.svg";
 
-export default function MainInfoModal() {
+export default function InfoModal() {
     return (
         <div className="information-button">
             <div className="information-text-div">

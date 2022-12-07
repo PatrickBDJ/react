@@ -37,6 +37,7 @@ function Main({ bookings, setBookings }) {
           <h3>Mine bookinger</h3>
         </div>
         <div>
+          {/* {<p id="no-bookings-text">Du har ingen eksisterende bookinger i øjeblikket.</p>} */}
           <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
@@ -44,17 +45,12 @@ function Main({ bookings, setBookings }) {
             <BookingModal />
           </Modal>
         </div>
-        <br />
         <main>
           <MainContent bookings={bookings} setBookings={setBookings} />
           <button onClick={openModal} id="booking-button"> Ny booking</button>
         </main>
-        <br /> <br /> <br />
-
-        {/*         <p id="no-bookings-text">Se bookinger længere nede på siden:</p> */}
 
       </div>
-      <br /> <br />
     </div>
   );
 }
