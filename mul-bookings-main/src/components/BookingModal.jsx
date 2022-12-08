@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useRef } from 'react';
 
-
 export default function BookingModal({ setBookings }) {
   const inputRef3 = useRef(null);
   const inputRef4 = useRef(null);
@@ -12,8 +11,6 @@ export default function BookingModal({ setBookings }) {
   const [seating, setSeating] = useState("");
   const [blackboard, setBlackboard] = useState(false);
   const [projector, setProjector] = useState(false);
-
-
 
   const handleRoom = (event) => {
     const input = event.target.value;
@@ -102,7 +99,7 @@ export default function BookingModal({ setBookings }) {
           <button type="button" className="room-attributes room-attributes-active">Tavle: <Check size={18} /></button> */}
         </div>
         <div className="button-centering">
-        <button onClick={handleSubmit} id="save-button">Gem booking</button>
+          <button onClick={handleSubmit} id="save-button">Gem booking</button>
         </div>
       </form>
     </div>
