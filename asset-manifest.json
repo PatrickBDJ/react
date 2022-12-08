@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/react/static/css/main.22379e9e.css",
-    "main.js": "/react/static/js/main.50f40b6e.js",
+    "main.css": "/react/static/css/main.a98c9524.css",
+    "main.js": "/react/static/js/main.c3299bf0.js",
     "static/js/787.22cf53f4.chunk.js": "/react/static/js/787.22cf53f4.chunk.js",
+    "static/media/clock.svg": "/react/static/media/clock.bb8bd24c3cddee27393d7f16eeb4f2fd.svg",
     "static/media/cphlogo.svg": "/react/static/media/cphlogo.09ce2cfefc815867ebac1ace6c57a2ea.svg",
+    "static/media/hourglass.svg": "/react/static/media/hourglass.c66a48d3fa39d5dc603af9eea22c3f5b.svg",
+    "static/media/piggybank.svg": "/react/static/media/piggybank.a2dc55f4a7b2372554d1cb3c789c5094.svg",
+    "static/media/bin.svg": "/react/static/media/bin.425a3a28b298153e70baa2504a2b5c0f.svg",
+    "static/media/mail.svg": "/react/static/media/mail.49777cdaf1b1d5090598302f83afe21a.svg",
+    "static/media/cphlogowhite.svg": "/react/static/media/cphlogowhite.4ef5b16891f3a3d43a609f5a491f3289.svg",
     "static/media/profil.svg": "/react/static/media/profil.27abd4a16ce60c62bbf3bc6f44e3cd92.svg",
     "static/media/calender.svg": "/react/static/media/calender.8764c5be5117e631dd7d8af4455eff49.svg",
     "static/media/info.svg": "/react/static/media/info.7b46bb71d2b16aa378a64015beece5c4.svg",
     "index.html": "/react/index.html",
-    "main.22379e9e.css.map": "/react/static/css/main.22379e9e.css.map",
-    "main.50f40b6e.js.map": "/react/static/js/main.50f40b6e.js.map",
+    "main.a98c9524.css.map": "/react/static/css/main.a98c9524.css.map",
+    "main.c3299bf0.js.map": "/react/static/js/main.c3299bf0.js.map",
     "787.22cf53f4.chunk.js.map": "/react/static/js/787.22cf53f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22379e9e.css",
-    "static/js/main.50f40b6e.js"
+    "static/css/main.a98c9524.css",
+    "static/js/main.c3299bf0.js"
   ]
 }
