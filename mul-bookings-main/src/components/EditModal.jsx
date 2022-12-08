@@ -107,7 +107,9 @@ function EditModal({ id }) {
           {/* <button type="button" className="room-attributes room-attributes-inactive">Projektor: <Check size={18} /></button>
           <button type="button" className="room-attributes room-attributes-active">Tavle: <Check size={18} /></button> */}
         </div>
+        <div className="button-centering">
         <button onClick={handleEdit} id="save-button">Ændre booking</button>
+        </div>
       </form>
     </div>
   );

@@ -159,7 +159,7 @@ input:hover::placeholder {
     line-height: 51px;
     font-weight: 700;
     height: auto;
-    margin: 5% 0 0 32%;
+    margin-top: 5%;
     width: 262px;
     height: 60px;
 }
@@ -167,4 +167,8 @@ input:hover::placeholder {
 #save-button:hover {
     background-color: #577FA7;
     cursor: pointer;
+}
+
+.button-centering{
+    text-align: center;
 }

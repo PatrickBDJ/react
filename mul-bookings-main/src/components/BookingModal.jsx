@@ -101,7 +101,9 @@ export default function BookingModal({ setBookings }) {
           {/* <button type="button" className="room-attributes room-attributes-inactive">Projektor: <Check size={18} /></button>
           <button type="button" className="room-attributes room-attributes-active">Tavle: <Check size={18} /></button> */}
         </div>
+        <div className="button-centering">
         <button onClick={handleSubmit} id="save-button">Gem booking</button>
+        </div>
       </form>
     </div>
   );
