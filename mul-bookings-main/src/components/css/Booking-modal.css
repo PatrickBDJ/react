@@ -113,7 +113,7 @@ input:hover::placeholder {
 
 .room-attribute-labels {
     font-size: 20px;
-    margin: 2% 0;
+    margin: 2% 0 0 0;
 }
 
 .room-attribute-labels input {
