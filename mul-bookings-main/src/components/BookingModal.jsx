@@ -59,7 +59,7 @@ export default function BookingModal({ setBookings }) {
             onChange={handleRoom} ref={inputRef3} />
           <button type="button" className="select" onClick={() => { inputRef3.current.focus(); }}>Vælg</button>
         </div>
-        <div className="btn-group">
+        <div className="btn-group" id="last-btn-group">
           <label className="label-title-styling" id="label-title-styling-3">Dato:</label>
           <input className="input-styling"
             type="date"
@@ -70,16 +70,16 @@ export default function BookingModal({ setBookings }) {
           <button type="button" className="select" onClick={() => { inputRef4.current.focus(); }}>Vælg</button>
         </div>
 
-        <div>
-          <label id="room-attribute-title">Lokalets egenskaber</label>
+        <div className="room-attribute">
+          <label className="room-attribute-title">Lokalets egenskaber</label>
           <div className="room-attribute-labels" >
             <label htmlFor="kvm">Kvadratmeter: </label>
-            <input type="number" name="kvm" id="kvm-input" placeholder="Indtast antal kvadratmeter:
+            <input type="number" name="kvm" id="kvm-input" placeholder="Indtast antal kvadratmeter
             " value={kvm} onChange={(event) => setKvm(event.target.value)} />
           </div>
           <div className="room-attribute-labels" >
             <label className="room-attribute-labels" htmlFor="seating">Siddepladser: </label>
-            <input type="number" name="seating" id="seating-input" placeholder="Indtast antal siddepladser:
+            <input type="number" name="seating" id="seating-input" placeholder="Indtast antal siddepladser
             " value={seating} onChange={(event) => setSeating(event.target.value)} />
           </div>
           <div className="room-attribute-labels room-attribute-checkbox" >

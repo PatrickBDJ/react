@@ -1,16 +1,19 @@
 .new-booking {
+    text-align: left;
     margin: 10px auto;
-    width: 363px;
+    width: 382px;
     border: 2px solid #385C7F;
     border-radius: 9px;
 }
 
 .new-booking h1 {
+    padding: 0 5%;
     font-size: 22px;
     font-weight: 700;
 }
 
-.new-booking p {
+.new-booking h3 {
+    padding: 0 5%;
     font-size: 22px;
     font-weight: 500;
 }
@@ -19,7 +22,8 @@
     cursor: pointer;
     font-size: 20px;
     color: #385C7F;
-    margin: 6px;
+    margin: 0 1% 2% 1%;
+    padding: 2px 15px;
     border: 1px solid #385C7F;
     background-color: #fff;
     border-radius: 5px;
@@ -43,31 +47,31 @@
 
 /* delete confirmation modal */
 
-#delete-confirmation-modal{
-    width: 25%;
-    height: 25%;
-    margin-left: auto;
-    margin-right: auto;
+#delete-confirmation-modal {
+    width: 30%;
+    height: 40%;
+    margin: auto;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
 }
 
-.delete-buttons{
-    box-sizing: border-box;
+.delete-buttons {
     background-color: #385C7F;
     border: none;
     border-radius: 14px;
-/*     font-size: 32px;
-    line-height: 51px;
-    font-weight: 700; */
     color: white;
-/*     width: 362px; */
+    line-height: 51px;
+    font-weight: 700;
     height: auto;
+    margin-top: 5%;
+    width: 262px;
+    height: 60px;
 }
 
-.delete-buttons:hover{
+.delete-buttons:hover {
     background-color: #577FA7;
     cursor: pointer;
 }
 
-.delete-div{
+.delete-div {
     text-align: center;
 }

@@ -1,0 +1,19 @@
+.Room-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 10%;
+}
+
+.calender {
+    float: left;
+    width: 25px;
+    margin: 1% 5% 5% 0;
+}
+
+#room-info-modal-style {
+    width: 40%;
+    height: 50%;
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+}

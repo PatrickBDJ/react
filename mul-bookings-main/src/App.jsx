@@ -3,6 +3,7 @@ import './index.css';
 import './components/css/Header.css';
 import './components/css/Main-info.css';
 import './components/css/Main-content.css';
+import './components/css/Room-info.css';
 import './components/css/Booking-modal.css';
 import './components/css/Login.css';
 import './components/css/New-booking.css';

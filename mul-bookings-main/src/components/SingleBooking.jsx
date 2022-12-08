@@ -1,13 +1,11 @@
 import Modal from "react-modal";
 import { useState } from "react";
 import EditModal from "./EditModal";
-import { Edit } from "lucide-react";
 import ConfirmDelete from "./ConfirmDelete";
 import RoomInfo from "./RoomInfo";
-import BookingModal from "./BookingModal";
 
 
-function SingleBooking({ date, room, id, setBookings, bookings, kvm, seating, projector, blackboard}) {
+function SingleBooking({ date, room, id, setBookings, bookings, kvm, seating, projector, blackboard }) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
@@ -52,18 +50,18 @@ function SingleBooking({ date, room, id, setBookings, bookings, kvm, seating, pr
   };
 
 
- /*  console.log(kvm); */
+  /*  console.log(kvm); */
   return (
     <div>
       <div className="new-booking">
         <h1>Lokale: {room}</h1>
-        <p>Dato: {date}</p>
+        <h3>Dato: {date}</h3>
       </div>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Edit booking form" ariaHideApp={false} id="info-modal-style">
-        <EditModal date={date} room={room} id={id} setBookings={setBookings} bookings={bookings} closeModal={closeModal}  />
+        <EditModal date={date} room={room} id={id} setBookings={setBookings} bookings={bookings} closeModal={closeModal} />
       </Modal>
       <div className="new-booking-buttons">
         <button onClick={openModal}>Ændre booking</button>
@@ -80,8 +78,8 @@ function SingleBooking({ date, room, id, setBookings, bookings, kvm, seating, pr
         <Modal
           isOpen={modalIsOpen2}
           onRequestClose={closeModal2}
-          contentLabel="Room infomation" ariaHideApp={false} id="info-modal-style">
-          <RoomInfo date={date} room={room} closeModal2={closeModal2} kvm={kvm} seating={seating} projector={projector} blackboard={blackboard}/>
+          contentLabel="Room infomation" ariaHideApp={false} id="room-info-modal-style">
+          <RoomInfo date={date} room={room} closeModal2={closeModal2} kvm={kvm} seating={seating} projector={projector} blackboard={blackboard} />
         </Modal>
         <button id="room-info" onClick={openModal2} >Lokale info</button>
       </div>

@@ -50,18 +50,17 @@
     color: #385C7F;
 }
 
+#last-btn-group {
+    margin-bottom: 10%;
+}
+
 #label-title-styling-2 {
     margin-right: 59px;
 }
 
 #label-title-styling-3 {
-    margin-right: 82px;
+    margin-right: 82.5px;
     text-decoration: none;
-}
-
-
-#room-attribute-title {
-    font-weight: 600;
 }
 
 
@@ -100,7 +99,12 @@ input:hover::placeholder {
     background-color: #F2F2F2;
 }
 
-#room-attribute-title {
+.room-attribute {
+    margin: 2%;
+}
+
+.room-attribute-title {
+    font-weight: 600;
     font-size: 26px;
     font-weight: 500;
     color: #00163B;
@@ -109,56 +113,30 @@ input:hover::placeholder {
 
 .room-attribute-labels {
     font-size: 20px;
-    margin-bottom: 0.5%;
+    margin: 2% 0;
 }
 
 .room-attribute-labels input {
     font-size: 20px;
-}
-
-.room-attribute-checkbox {
-    margin-bottom: 10px;
-}
-
-.room-attribute-checkbox input {
-    height: 18px;
     width: 18px;
-
-}
-
-
-.room-attributes {
-    font-size: 20px;
-    margin-left: 1%;
-    margin-top: 1%;
-    padding: 3px 16px;
-}
-
-/* .room-attributes-active {
-    color: white;
-    background: #385C7F;
+    height: 18px;
+    width: 280px;
+    padding: 8px 8px;
     border: 1px solid #385C7F;
     border-radius: 6px;
 }
 
-.room-attributes-inactive {
-    color: #385C7F;
-    background: white;
-    border: 1px solid #385C7F;
-    border-radius: 6px;
+#kvm-input {
+    margin-left: 48.5px;
 }
 
-.room-attributes-inactive:hover {
-    background: #385C7F;
-    color: white;
-    cursor: pointer;
+#seating-input {
+    margin-left: 52.5px;
 }
 
-.room-attributes-active:hover {
-    color: #385C7F;
-    background: white;
-    cursor: pointer;
-} */
+#projector-input {
+    margin-left: 0px;
+}
 
 #save-button {
     background-color: #385C7F;
@@ -168,7 +146,7 @@ input:hover::placeholder {
     line-height: 51px;
     font-weight: 700;
     height: auto;
-    margin-top: 5%;
+    margin: 5% 0 0 32%;
     width: 262px;
     height: 60px;
 }
