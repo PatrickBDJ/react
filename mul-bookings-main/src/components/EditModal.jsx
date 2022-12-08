@@ -1,7 +1,5 @@
-import Modal from "react-modal";
 import { useRef } from 'react';
 import { useState } from "react";
-import { Check } from 'lucide-react';
 
 function EditModal({ id }) {
   const inputRef1 = useRef(null);
