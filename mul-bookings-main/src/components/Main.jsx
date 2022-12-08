@@ -36,20 +36,17 @@ function Main({ bookings, setBookings }) {
           <img src={calender} alt="Kalender" className="calender-styling" />
           <h3>Mine bookinger</h3>
         </div>
-        <div>
-          {/* {<p id="no-bookings-text">Du har ingen eksisterende bookinger i øjeblikket.</p>} */}
-          <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            contentLabel="Create booking form" ariaHideApp={false} id="info-modal-style">
-            <BookingModal />
-          </Modal>
-        </div>
         <main>
           <MainContent bookings={bookings} setBookings={setBookings} />
-          <button onClick={openModal} id="booking-button"> Ny booking</button>
         </main>
-
+        {/* {<p id="no-bookings-text">Du har ingen eksisterende bookinger i øjeblikket.</p>} */}
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          contentLabel="Create booking form" ariaHideApp={false} id="info-modal-style">
+          <BookingModal />
+        </Modal>
+        <button onClick={openModal} id="booking-button"> Ny booking</button>
       </div>
     </div>
   );
