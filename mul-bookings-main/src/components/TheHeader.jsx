@@ -38,7 +38,6 @@ function TheHeader({ setBookings }) {
           <BookingModal setBookings={setBookings} />
         </Modal>
         <button onClick={openModal} id="header-room-button">Lokalebooking</button>
-
         <Modal
           isOpen={modalIsOpen1}
           onRequestClose={closeModal1}
