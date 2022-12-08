@@ -126,6 +126,14 @@ input:hover::placeholder {
     border-radius: 6px;
 }
 
+.room-attribute-labels-checkbox input {
+    font-size: 20px;
+    width: 18px;
+    height: 18px;
+    padding: 8px 8px;
+    border-radius: 6px;
+}
+
 #kvm-input {
     margin-left: 48.5px;
 }
@@ -134,8 +142,12 @@ input:hover::placeholder {
     margin-left: 52.5px;
 }
 
+#blackboard-input {
+    margin-left: 132.5px;
+}
+
 #projector-input {
-    margin-left: 0px;
+    margin-left: 97px;
 }
 
 #save-button {
