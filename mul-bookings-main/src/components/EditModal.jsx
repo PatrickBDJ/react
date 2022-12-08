@@ -88,13 +88,13 @@ function EditModal({ id }) {
             " value={seating} onChange={(event) => setSeating(event.target.value)} />
           </div>
 
-          <div className="room-attribute-labels room-attribute-checkbox" >
+          <div className="room-attribute-labels-checkbox room-attribute-checkbox" >
             <label className="room-attribute-labels" htmlFor="blackboard">
               Tavle:
               <input type="checkbox" name="blackboard" id="blackboard-input" checked={blackboard} onChange={(event) => setBlackboard(event.target.checked)} />
             </label>
           </div>
-          <div className="room-attribute-labels room-attribute-checkbox" >
+          <div className="room-attribute-labels-checkbox room-attribute-checkbox" >
             <label className="room-attribute-labels" htmlFor="projector">
               Projekter:
               <input type="checkbox" name="projector" id="projector-input" checked={projector} onChange={(event) => setProjector(event.target.checked)} />
